@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     console.log(req.body)
-    sql = "SELECT *FROM tb_user"
+    sql = "SELECT * FROM tb_user"
     con.query(sql, function (err, result) {
         if (err) return console.log(err);
         res.json(result);
