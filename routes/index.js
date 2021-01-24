@@ -20,11 +20,11 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     console.log(req.body)
-    // sql = "UPDATE tb_customer SET customer_id = '"+ req.body.editId +"', customer_name = '"+ req.body.editName +"', customer_email = '"+ req.body.editEmail +"', customer_address = '"+ req.body.editAddress +"', customer_data = '"+ req.body.editData +"' WHERE id = '"+ req.body.edit_id +"'"
-    // con.query(sql, function (err, result) {
-    //     if (err) return console.log(err);
-    //     res.json(result);
-    // })
+    sql = "SELECT *FROM tb_user"
+    con.query(sql, function (err, result) {
+        if (err) return console.log(err);
+        res.json(result);
+    })
 })
 
 
