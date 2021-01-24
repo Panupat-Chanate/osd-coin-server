@@ -3,7 +3,7 @@ const router = express.Router();
 const mysql = require('mysql');
 
 const con = mysql.createConnection({
-    host: 'cloud-linux11.thaidatahosting.com',
+    host: 'localhost',
     user: 'sununtde_Projectwut',
     password: 'Project01!',
     database: 'sununtde_ProjectPanupat'
