@@ -15,6 +15,7 @@ con.connect(function(err) {
 
 router.get('/', async (req, res) => {
     console.log('get')
+    res.send('data')
 })
 
 router.post('/', async (req, res) => {
